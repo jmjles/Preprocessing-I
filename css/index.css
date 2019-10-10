@@ -1,1 +1,37 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-color: #e5eeff;
+}
+article,
+header,
+#about {
+  background-color: white;
+  margin: 0 auto;
+  width: 85%;
+}
+article {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+article section {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 45%;
+}
+article section #info section:nth-child(3) div {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
