@@ -14,6 +14,7 @@
 }
 body{
 	background-color: @veryLightBlue;
+	font-size: 62.5%; 
 }
 
 article, header, #about{
@@ -21,11 +22,48 @@ article, header, #about{
 	margin: 0 auto;
 	width: 85%;
 }
-article {
+
+/* Font Size */
+h1{
+	font-size: 2.3rem;
+	margin-bottom: 1rem;
+}
+h2{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+h3{
+	font-size: 1.7rem;
+}
+p, td, a{
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+.minimum{
+	font-size: 1rem;
+	color: grey;
+}
+
+.simple{ 
+
+	line-height: 1.3rem;
+
+	header{
+
+		h1{
+			border: 5px solid black;
+			padding: 2rem;
+		}
+		padding: 2rem 2rem 0;
+
+	}
+	article {
+
 	padding: 2rem;
 	.flexRow();
 	justify-content: space-around;
 	section {
+
 		.flexColumn();
 		flex-basis: 45%;
 
@@ -40,4 +78,5 @@ article {
 			}
 		}
 	}
+}
 }
