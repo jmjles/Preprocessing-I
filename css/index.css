@@ -1,1 +1,70 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-color: #e5eeff;
+  font-size: 62.5%;
+}
+article,
+header,
+#about {
+  background-color: white;
+  margin: 0 auto;
+  width: 85%;
+}
+/* Font Size */
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+p,
+td,
+a {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.minimum {
+  font-size: 1rem;
+  color: grey;
+}
+.simple {
+  line-height: 1.3rem;
+}
+.simple header {
+  padding: 2rem 2rem 0;
+}
+.simple header h1 {
+  border: 5px solid black;
+  padding: 2rem;
+}
+.simple article {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.simple article section {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 45%;
+}
+.simple article section #info section:nth-child(3) div {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
